@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "768739331252",
+    "project_id": "baotrann-defbf",
+    "storage_bucket": "baotrann-defbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768739331252:android:02074ee2889cc25619dbe1",
+        "android_client_info": {
+          "package_name": "com.example.lab8_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768739331252-chjf4g5ts0nrpnjtlduhlrq1dks0c4v1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvBtF-Bv24f7cT3BnXRL6Uz2dtWhAIB4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768739331252-chjf4g5ts0nrpnjtlduhlrq1dks0c4v1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
