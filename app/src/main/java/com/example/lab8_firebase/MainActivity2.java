@@ -58,6 +58,12 @@ public class MainActivity2 extends AppCompatActivity {
             public void onSuccess(AuthResult authResult) {
                 Toast.makeText(MainActivity2.this, "Đăng nhập thành công. Xin chúc mừng bạn.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity2.this, MainActivity4.class);
+
+                // Get email to "MainActivity4.class"
+                Bundle bundle = new Bundle();
+                bundle.putString("email", email);
+                intent.putExtras(bundle);
+
                 startActivity(intent);
             }
         });

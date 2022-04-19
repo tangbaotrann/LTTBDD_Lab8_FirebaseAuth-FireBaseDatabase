@@ -19,34 +19,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView13"
+    <ImageButton
+        android:id="@+id/imgBtnHappy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="80dp"
+        android:background="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         app:srcCompat="@drawable/img1" />
 
-    <ImageView
-        android:id="@+id/imageView14"
+    <ImageButton
+        android:id="@+id/imgBtnNormal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView15"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        android:background="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnUnHappy"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnHappy"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         app:srcCompat="@drawable/img2" />
 
-    <ImageView
-        android:id="@+id/imageView15"
+    <ImageButton
+        android:id="@+id/imgBtnUnHappy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnHappy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnHappy"
         app:srcCompat="@drawable/img3" />
 
     <ImageView
@@ -56,7 +59,7 @@
         android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnHappy"
         app:srcCompat="@drawable/img_bottom_finish" />
 
     <Button
