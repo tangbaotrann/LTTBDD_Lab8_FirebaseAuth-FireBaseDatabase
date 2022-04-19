@@ -83,20 +83,20 @@ public class FacesDatabaseHandler extends SQLiteOpenHelper {
     }
 
     // find by id
-    Faces getFace(String email) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        Cursor cursor = db.query(TABLE_FACES, new String[] {
-                KEY_ID, KEY_EMAIL, KEY_HAPPY, KEY_UNHAPPY, KEY_NORMAL
-        }, KEY_EMAIL + " =?", new String[] {String.valueOf(email)}, null, null, null, null);
-
-        if(cursor != null) {
-            cursor.moveToFirst();
-        }
-
-        Faces faces = new Faces(Integer.parseInt(cursor.getString(0)), cursor.getString(1),
-                                Integer.parseInt(cursor.getString(2)), Integer.parseInt(cursor.getString(3)),
-                                Integer.parseInt(cursor.getString(4)));
-        return faces;
-    }
+//    Faces getFace(String email) {
+//        SQLiteDatabase db = this.getReadableDatabase();
+//
+//        Cursor cursor = db.query(TABLE_FACES, new String[] {
+//                KEY_ID, KEY_EMAIL, KEY_HAPPY, KEY_UNHAPPY, KEY_NORMAL
+//        }, KEY_EMAIL + " =?", new String[] {String.valueOf(email)}, null, null, null, null);
+//
+//        if(cursor != null) {
+//            cursor.moveToFirst();
+//        }
+//
+//        Faces faces = new Faces(Integer.parseInt(cursor.getString(0)), cursor.getString(1),
+//                                Integer.parseInt(cursor.getString(2)), Integer.parseInt(cursor.getString(3)),
+//                                Integer.parseInt(cursor.getString(4)));
+//        return faces;
+//    }
 }
