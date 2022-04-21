@@ -130,7 +130,7 @@ public class MainActivity4 extends AppCompatActivity {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    Toast.makeText(MainActivity4.this, "Email: " + email + " - Normal: " + faces.getUnhappy(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity4.this, "Email: " + email + " - Unhappy: " + faces.getUnhappy(), Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity4.this, "Email: " + email + " - Unhappy: 1", Toast.LENGTH_SHORT).show();
                 }
