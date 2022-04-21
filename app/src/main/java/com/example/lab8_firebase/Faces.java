@@ -1,40 +1,41 @@
 package com.example.lab8_firebase;
 
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Faces {
 
-    int id;
-    String email;
-    int happy;
-    int unhappy;
-    int normal;
+    @PrimaryKey
+    @NonNull
+    @ColumnInfo(name="email")
+    public String email;
+
+    @ColumnInfo(name="happy")
+    public int happy;
+
+    @ColumnInfo(name="unhappy")
+    public int unhappy;
+
+    @ColumnInfo(name="normal")
+    public int normal;
 
     public Faces() {
     }
 
-    public Faces(String email) {
-        this.email = email;
-    }
-
     // email + face: happy
-    public Faces(String email, int happy) {
-        this.email = email;
-        this.happy = happy;
-    }
+//    public Faces(String email, int happy) {
+//        this.email = email;
+//        this.happy = happy;
+//    }
 
-    public Faces(int id, String email, int happy, int unhappy, int normal) {
-        this.id = id;
+    public Faces(String email, int happy, int unhappy, int normal) {
         this.email = email;
         this.happy = happy;
         this.unhappy = unhappy;
         this.normal = normal;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getEmail() {
